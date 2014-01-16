@@ -1,8 +1,8 @@
 package net.acomputerdog.RealisticStone;
 
+import net.acomputerdog.BlazeLoader.api.block.ApiBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStone;
-import net.minecraft.block.MinecraftPackageAccessorC;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.world.World;
@@ -18,7 +18,7 @@ public class BlockRealisticStone extends BlockStone {
         this.func_149672_a(field_149780_i);
         this.func_149663_c("stone");
         this.func_149658_d("stone");
-        this.field_149761_L = MinecraftPackageAccessorC.getBlockIcon(oldStone);
+        this.field_149761_L = ApiBlock.getBlockIcon(oldStone);
     }
 
     public Item func_149650_a(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
