@@ -4,7 +4,6 @@ import net.acomputerdog.BlazeLoader.api.block.ApiBlock;
 import net.acomputerdog.BlazeLoader.main.Version;
 import net.acomputerdog.BlazeLoader.mod.Mod;
 import net.acomputerdog.BlazeLoader.util.logger.BLLogger;
-import net.minecraft.block.Block;
 
 public class ModRealisticStone extends Mod {
     public static final BLLogger logger = new BLLogger("Realistic_Stone", false, false);
@@ -89,7 +88,7 @@ public class ModRealisticStone extends Mod {
      */
     @Override
     public void start() {
-        ApiBlock.registerBlock(new BlockRealisticStone((Block)Block.field_149771_c.getObject("stone")), "stone", 1);
+        ApiBlock.registerBlock(new BlockRealisticStone(ApiBlock.getBlockByName("stone")), "stone", 1);
     }
 
     /**
