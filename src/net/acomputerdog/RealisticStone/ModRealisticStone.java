@@ -61,7 +61,7 @@ public class ModRealisticStone extends Mod {
         if(!Version.getMinecraftVersion().equals("1.7.2")){
             System.out.println("TerrainEdit - Incorrect Minecraft version, aborting launch!");
             return false;
-        }else if(Version.getGlobalVersion() == 2 && Version.getApiVersion() > 9){
+        } else if (Version.getGlobalVersion() == 3 && Version.getApiVersion() > 0) {
             System.out.println("TerrainEdit - Unknown BL version, bad things may happen!");
             return true;
         }else if(Version.getGlobalVersion() != 2 || Version.getApiVersion() <= -1){
