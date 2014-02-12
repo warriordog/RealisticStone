@@ -59,16 +59,16 @@ public class ModRealisticStone extends Mod {
     @Override
     public boolean isCompatibleWithBLVersion() {
         if(!Version.getMinecraftVersion().equals("1.7.2")){
-            System.out.println("TerrainEdit - Incorrect Minecraft version, aborting launch!");
+            System.out.println("RealisticStone - Incorrect Minecraft version, aborting launch!");
             return false;
         } else if (Version.getGlobalVersion() == 3 && Version.getApiVersion() > 0) {
-            System.out.println("TerrainEdit - Unknown BL version, bad things may happen!");
+            System.out.println("RealisticStone - Unknown BL version, bad things may happen!");
             return true;
         } else if (Version.getGlobalVersion() != 3 || Version.getApiVersion() <= -1) {
-            System.out.println("TerrainEdit - Incompatible BL version, aborting launch!");
+            System.out.println("RealisticStone - Incompatible BL version, aborting launch!");
             return false;
         }else{
-            System.out.println("TerrainEdit - Valid BL and MC versions.");
+            System.out.println("RealisticStone - Valid BL and MC versions.");
             return true;
         }
     }
