@@ -88,7 +88,7 @@ public class ModRealisticStone extends Mod {
      */
     @Override
     public void start() {
-        ApiBlock.registerBlock(new BlockRealisticStone(ApiBlock.getBlockByName("stone")), "stone", 1);
+        ApiBlock.registerBlock(1, "stone", new BlockRealisticStone(ApiBlock.getBlockByName("stone")));
     }
 
     /**
