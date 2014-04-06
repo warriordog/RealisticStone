@@ -3,10 +3,10 @@ package net.acomputerdog.RealisticStone;
 import net.acomputerdog.BlazeLoader.api.block.ApiBlock;
 import net.acomputerdog.BlazeLoader.main.Version;
 import net.acomputerdog.BlazeLoader.mod.Mod;
-import net.acomputerdog.BlazeLoader.util.logger.BLLogger;
+import net.acomputerdog.core.logger.CLogger;
 
 public class ModRealisticStone extends Mod {
-    public static final BLLogger logger = new BLLogger("Realistic_Stone", false, false);
+    public static final CLogger logger = new CLogger("Realistic_Stone", false, false);
 
     /**
      * Returns ID used to identify this mod internally, even among different versions of the same mod.  Mods should override.
